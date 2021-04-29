@@ -1,0 +1,458 @@
+
+<!-- February - March, 2021 -->
+<!-- Cedric Furman -->
+<!-- This is the prototype of my website for project 2, whose aim is to explain and compare United Nations Sustainable Developement Goals (SDG) 9 and 11 -->
+<!-- The website has 5 different pages: Page 1 - SDG 9, page 2 - SDG 11, page 3 - comparing both SDGs, page 4 - further reading, and page 5 - how to take action -->
+
+<!DOCTYPE hmtl>
+
+<html> 
+
+<head> <!-- Start of the head section ----------------------------------------------------->
+
+	<title> Sustainable Development Goals 9 and 11 Further Reading </title>
+
+<!-- Javascript definitions -->
+
+	<script>
+
+		var input = document.getElementById("entryBox").value; // Stores the input of the search bar
+
+		function search() { // Takes input from the search bar to direct the user, there are currently
+
+			global input;
+
+			if (input.toLowerCase() === "sdg 9") {
+
+				window.open("");
+
+			}
+
+			else if (input.toLowerCase() === "sdg 11") {
+
+				window.open("");
+
+			}
+
+			else if (input.toLowerCase() === "comparison") {
+
+				window.open("");
+
+			}
+
+			else if (input.toLowerCase() === "further reading") {
+
+				window.open("");
+
+			}
+
+			else if (input.toLowerCase() === "take action") {
+
+				window.open("");
+
+			}
+
+			else {
+
+				alert("No search results");
+			}
+
+		}
+
+	</script>
+
+<!-- Cascading Style Sheets (CSS) definitions -->
+
+	<style> 
+
+		/* Titles will be centered, black, and bold */
+		.titleText { 
+
+			text-align: center;
+
+			color: black;
+
+			font-size: 50;
+
+			font-weight: bold;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* Subtitles will be close to titles, they'll be grey and not bold */
+		.subtitleText {
+
+			text-align: center;
+
+			color: dimgrey;
+
+			font-size: 30;
+
+			font-weight: normal;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* Section titles will be like subtitles, but aligned left */
+		.sectionTitleText {
+
+			text-align: left;
+
+			font-size: 24;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* Paragraph text will grey */
+		.paragraphText {
+
+			text-align: left;
+
+			font-size: 14;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* The header section will be located at the top of the webstie, and will contain the logo and search bar */
+		.header {
+
+			background-color: white;
+
+			height: 70px;
+
+		}
+
+		/* This is the class for the program's search bar */
+		.searchBar {
+
+			float: right;
+
+			margin-top: 20;
+
+			height: 30;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* This is the class of the search bar's entry button */
+		.entryButton {
+
+			float: right;
+
+			margin-top: 20;
+
+			margin-right: 20;
+
+			height: 30;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* This section will store the title and main information */
+		.title {
+
+			background-color: teal;
+
+			padding-top: 50;
+
+			padding-bottom: 80;
+
+			line-height: 0.25;
+
+		}
+
+		/* A section for navigation bars */
+		.navigationBarSection {
+
+			background-color: dimgrey;
+
+		}
+
+		/* A list class for the navigation bar */
+		ul.navigationBar {
+
+  			list-style-type: none;
+
+  			margin: 0;
+
+			padding: 0;
+
+			height: 70px;
+
+			overflow: hidden;
+
+			position: sticky;
+
+		}
+
+		/* A class for the navigation items */
+		.navigationBar a {
+
+			display: block;
+
+			float: left;
+
+			width: 175;
+
+			height: 70;
+
+			text-align: center;
+
+  			text-decoration: none;
+
+  			color: black;
+
+  			font-size: 20;
+
+			font-weight: 0;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* This is the status of a navigation item being hovered over */
+		.navigationBar a:hover {
+
+			background-color: lightgrey;
+
+			color: dimgrey;
+
+			transition: 1s;
+
+		}
+
+		/* This is the class for the key information section of the wepage, it has an image as its background */
+		.keyInformation {
+
+			background-image: url("WuppertalTrain.jpg");
+
+			background-position: center;
+
+			background-size: cover;
+
+			background-repeat: no-repeat;
+
+		}
+
+		/* This is a class for the body of the program */
+		.body {
+
+			position: sticky;
+
+			background-color: #f0f2f1;
+
+		}
+
+		/* This is a list class used for the main content of the program, including information, charts, media, and more */
+		ul.information {
+
+			list-style-type: none;
+
+			margin: 0;
+
+			padding: 0;
+
+			width: 100%;
+
+			height: 250;
+
+			overflow: hidden;
+
+		}
+
+		/* This is the class for items of the main body of the website */
+		.information li {
+
+			display: block;
+
+			float: left;
+
+			padding-top: 20;
+
+			padding-right: 20;
+
+			padding-left: 20;
+
+			width: 47.2%;
+
+			height: 100%;
+
+		}
+
+		/* This is the class for images in the information section */
+		.image {
+
+			width: 100%; 
+
+			height: 100%; 
+
+			font-size: 14;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+		/* This flexbox is used to center the information in the footer */
+		.footer {
+
+			display: flex;
+
+			height: 70px;
+
+			justify-content: center;
+
+			align-items: center;
+
+		}
+
+		/* This is the class of the footer's flexbox item */
+		.footer > div {
+
+			color: grey;
+
+			font-size: 14;
+
+			font-family: "Trebuchet MS";
+
+		}
+
+	</style> 
+
+</head> <!-- End of the head Section ----------------------------------------------------->
+
+<body style = "background-color: white; margin: 0;"> <!-- Start of the body Section ----------------------------------------------------->
+
+	<section class = "header">
+
+		<button type = "button" class = "entryButton" onclick = "search()"> Enter </button>
+
+		<input id = "entryBox" type = "text" class = "searchBar" placeholder = "Search...">
+
+	</section> 
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the site's primary navigation bar -->
+
+		<ul class = "navigationBar">
+
+			<li> <a href = ""> <br> SDG 9 </a> </li>
+
+			<li> <a style = "background-color: lightgreen;" href = ""> <br> SDG 11 </a> </li>
+
+			<li> <a href = ""> <br> Comparison </a> </li>
+
+			<li> <a href = ""> <br> Further Reading </a> </li>
+
+			<li> <a style = "float: right;" href = ""> <br> Take Action </a> </li>
+
+		</ul>
+
+	</section>
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "title"> <!-- This is the website's title -->
+
+		<h3 class = "subtitleText"> United Nations </h1>
+
+		<h1 class = "titleText"> Sustainable Developement Goal 11 </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "keyInformation"> <!-- This is the key information section of the webapge, it's meant to gain the attention of the user and provide a summary -->
+
+		<br><br><br><br><br><br><br><br><br><br> <!-- These line breaks are placeholders to make the background image larger -->
+
+		<h3 class = "sectionTitleText" style = "text-align: center; color: white; font-weight: bold;"> Key Information </h3>
+
+		<br><br><br><br><br><br><br><br><br><br>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the secondary navigation bar, it's used for switching between different topics on the webpage -->
+
+		<ul class = "navigationBar">
+
+			<li> <a style = "margin-left: 460;" href = ""> <br> The Problem </a> </li>
+
+			<li> <a href = ""> <br> Solutions </a> </li>
+
+			<li> <a style = "background-color: lightgreen;" href = ""> <br> Examples </a> </li>
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+ 
+	<section class = "body"> <!-- This is the main body of the webpage that will contain most of its information -->
+
+		<ul class = "information"> <!-- Each row of the body contains text accompanied by media or an interactive feature, as in my design from B ii. The rows are each seperate lists, and the sides of media and information alternate each row -->
+
+			<li class = "paragraphText"> This is where information will be displayed. </li>
+
+			<li style = "padding-top: 0; padding-right: 0; padding-left: 0; width: 720;"> <img src = "Bikes.jpg" alt = "This is a caption describing the image" class = "image"> </li>
+
+		</ul>
+
+		<ul class = "information"> 
+
+			<li style = "padding-top: 0; padding-right: 0; padding-left: 0; width: 720;"> <img src = "InfrastructureSpendingChart.png" alt = "This is a caption describing the image" class = "image"> </li>
+
+			<li class = "paragraphText"> Graphs are a great method of explanation. </li>
+
+		</ul>
+
+		<ul class = "information"> 
+
+			<li class = "paragraphText"> Images are great for keeping a site engaging. </li>
+
+			<li style = "padding-top: 0; padding-right: 0; padding-left: 0; width: 720;"> <img src = "BulletTrain.jpg" alt = "This is a caption describing the image" class = "image"> </li>
+
+		</ul>
+
+		<ul class = "information"> 
+
+			<li style = "padding-top: 0; padding-right: 0; padding-left: 0; width: 720;"> <iframe class = "image" controls src="https://www.youtube.com/embed/_W2Yq1zzxAc"> </iframe> </li>
+
+			<li class = "paragraphText"> A YouTube video is a dynamic way to show information. </li>
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "header"> <!-- This is the website's footer. The header class is used because it has the same properties as the footer -->
+
+		<div class = "footer"> <!-- A flexbox is used to keep its contents centered -->
+
+			<div> Cedric Furman, 2021 </div> <!-- Some brief information on the program -->
+
+		</div>
+
+	</section>
+
