@@ -1,0 +1,208 @@
+
+<!-- February - April, 2021 -->
+<!-- Cedric Furman -->
+<!-- This is my website for project 2, whose aim is to explain and compare United Nations Sustainable Developement Goals (SDG) 9 and 11 -->
+<!-- The website has 5 different pages: Page 1 - SDG 9, page 2 - SDG 11, page 3 - comparing both SDGs, page 4 - further reading, and page 5 - how to take action -->
+<!-- This file contains the SDGs 9 and 11 further reading webpage -->
+
+
+
+<!DOCTYPE hmtl>
+
+<html> 
+
+<head> <!-- Start of the head section ----------------------------------------------------->
+
+	<title> Sustainable Development Goals 9 and 11 Further Reading </title>
+
+	<!-- -------------------------->
+
+	<link rel = "icon" href = "SDGLogo.png"> <!-- Gives the page's google tab a favicon (a tab icon) -->
+
+	<!-- -------------------------->
+
+	<!-- Cascading Style Sheets (CSS) definitions -->
+
+	<link rel= "stylesheet" href= "Coding - Year 9 - SDGs 9 and 11 Website - External Style Sheet.css"> <!-- An external style sheet is accesed to keep files shorter -->
+
+	<!-- -------------------------->
+
+	<!-- Javascript definitions -->
+
+	<script src= "Coding - Year 9 - SDGs 9 and 11 Website - External Javascript File.js"> </script> <!-- The website also uses an external script file -->
+
+</head> <!-- End of the head Section ----------------------------------------------------->
+
+<body style = "background-color: white; margin: 0; padding: 0;"> <!-- Start of the body Section ----------------------------------------------------->
+
+	<div></div> <!-- -------------------------->
+
+	<section class = "header">
+
+		<img onclick = "home();" src = "SDGLogo.png" class = "logo">
+
+		<button id = "entryButton" onclick = "search();" type = "button" class = "entryButton"> Enter </button> <!-- This is the search bar entry button -->
+
+		<input id = "entryBox" type = "text" class = "searchBar" placeholder = "Search..."> <!-- This is the website's search bar -->
+
+	</section> 
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the site's primary navigation bar -->
+
+		<ul class = "navigationBar">
+
+			<li> <a href = "Coding - Year 9 - SDG 9 Website.html"> <br> SDG 9 </a> </li>
+
+			<li> <a href = "Coding - Year 9 - SDG 11 Website.html"> <br> SDG 11 </a> </li> 
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Comparison Website.html"> <br> Comparison </a> </li>
+
+			<li> <a style = "background-color: lightgreen;" href = "Coding - Year 9 - SDGs 9 and 11 Further Reading Website.html"> <br> Further Reading </a> </li>
+
+			<li> <a style = "float: right;" href = "Coding - Year 9 - SDGs 9 and 11 Take Action Website.html"> <br> Take Action </a> </li>
+
+		</ul>
+
+	</section>
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "furtherReadingTitle"> <!-- This is the website's title -->
+
+		<h3 class = "subtitleText"> Sustainable Development Goals 9 and 11 </h1>
+
+		<h1 class = "titleText"> Additional Resources </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "keyInformation" style = "background-image: url('HongKong.jpg');"> <!-- This is the key information section of the webapge, it's meant to gain the attention of the user and provide a summary -->
+
+		<h3 class = "sectionTitleText" style = "color: white; font-weight: bold;"> There are plenty of great resources on goals 9 and 11 </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the secondary navigation bar for SDGs 9 and 11 webpages, but on the comparison webapge where everything fits on one page, it's used as a divider -->
+
+		<ul class = "navigationBar">
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+ 
+	<section class = "body"> <!-- This is the main body of the webpage that will contain most of its information -->
+
+		<table id = "theProblemTable" class = "information"> <!-- Each row of the body contains text accompanied by media or an interactive feature, as in my design from B ii. The rows are each seperate lists, and the sides of media and information alternate each row -->
+
+			<tr>
+
+				<td> <a class = "paragraphText" style = "padding-left: 10; padding-top: 10;" href = "https://sdgs.un.org/" target = "_blank"> United Nations </a> <br> <!-- An a element is used to store the link to the refrenced site --> <p class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The United Nations (UN) website is a great primary resource for learning about SDGs 9 and 11. The site doesn't have lengthy explanations, but contains all the targets, indicators, and data of the goals, along with infographics and other figures to aid in comprehending them. The UN site also has a news feature, where articles about the SDGs are shown, but the site acts best for understanding the principle aims and statuses of SDGs 9 and 11. </p> </td>
+
+				<td> <img src = "UNWebsite.png" alt = "The goal selector on the UN SDG website" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "IISDSite.png" alt = "The SDG menu of the Global Goals site" class = "image"> </td>
+
+				<td> <a class = "paragraphText" style = "padding-left: 10; padding-top: 10;" href = "https://sdg.iisd.org/" target = "_blank"> International Institute for Sustainable Development </a> <br> <p class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The International Institute for Sustainable Development (IISD) doesn't have any explainations of the SDGs, but it does have a great database of articles related to the goals. Reading from a series of different sources is a great way to learn about the SDGs and view different perspectives of them. </p> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <a class = "paragraphText" style = "padding-left: 10; padding-top: 10;" href = "https://www.globalgoals.org/" target = "_blank"> The Global Goals </a> <br> <p class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The Global Goals is an informative site on the news pertaining to the SDGs. The Global Goals doesn't have the longest explainations about each of the goals, but it does have several news articles and events that involve the SDGs; it's a great site for keeping up with the progress of the goals. </p> </td>
+
+				<td> <img src = "GlobalGoals.png" alt = "The SDG menu of the Global Goals site" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "SDGCompass.png" alt = "The SDG menu of the Global Goals site" class = "image"> </td>
+
+				<td> <a class = "paragraphText" style = "padding-left: 10; padding-top: 10;" href = "https://sdgcompass.org/" target = "_blank"> SDG Compass </a> <br> <p class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> SDG Compass is a great tool for understanding the specific targets of the SDGs, as well as their economic aspects. The site contains explainations of each of the goals, but more impressively it connects each of the goals and their targets to aspects of buissness, which is great for learning about the implimentation of the SDGs. </p> </td>
+
+			</tr>
+
+		</table>
+
+	<div> </div> <!-- -------------------------->
+
+	<section class = "navigationBarSection"> <!-- Again the navigation bar classes are used to form a divider -->
+
+		<ul class = "navigationBar">
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<table class = "quiz"> <!-- A quiz to test the reader on the contents of the site -->
+
+		<tr>
+
+			<td> <br> <p class = "subtitleText"> SDGs 9 and 11 Quiz </p> <br> </td>  
+
+		</tr>
+
+		<tr>
+
+			<td> <p id = "question" class = "paragraphText" style = "text-align: center;"> Press start to begin! </p> </td> <!-- This is where the current quiz question will be displayed -->
+
+		</tr>
+
+		<tr>
+
+			<td> <input id = "answerBox" type = "text" class = "searchBar" style = "float: inherit; margin-left: 25;" placeholder = "Answer..."> <!-- This is where the user enters their answers-->
+			
+			<button id = "submitButton" onclick = "quizUser();" type = "button" class = "entryButton" style = "float: inherit; margin-bottom: 25;"> Start </button> </td> <!-- This is where the user confirms their answers -->
+
+		</tr>
+
+		<tr>
+
+			<td> <p id = "answer" class = "paragraphText" style = "text-align: center;"> </p> </td> <!-- This is where the correct response to the last question will be displayed -->
+
+		</tr>
+
+	</table>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "header"> <!-- This is the website's footer. The header class is used because it has the same properties as the footer -->
+
+		<div class = "footer"> <!-- A flexbox is used to keep its contents centered -->
+
+			<div> Cedric Furman, 2021 </div> <!-- Some brief information on the programmer -->
+
+		</div>
+
+	</section>
+
+</body>
+
+</html>

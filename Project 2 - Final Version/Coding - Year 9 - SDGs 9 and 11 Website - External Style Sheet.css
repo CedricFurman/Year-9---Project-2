@@ -1,0 +1,434 @@
+
+/* February - April, 2021 */ 
+/* Cedric Furman */
+/* This is my website for project 2, whose aim is to explain and compare United Nations Sustainable Developement Goals (SDG) 9 and 11 */
+/* The website has 5 different pages: Page 1 - SDG 9, page 2 - SDG 11, page 3 - comparing both SDGs, page 4 - further reading, and page 5 - how to take action */
+/* This is the external style sheet containing the classes used throughout the website */
+
+
+
+/* Titles will be centered, black, and bold */
+.titleText { 
+
+	text-align: center;
+
+	color: black;
+
+	font-size: 50;
+
+	font-weight: bold;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* Subtitles will be close to titles, they'll be grey and unbolded */
+.subtitleText {
+
+	text-align: center;
+
+	color: dimgrey;
+
+	font-size: 30;
+
+	font-weight: normal;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* Section titles will be like subtitles, but aligned left */
+.sectionTitleText {
+
+	text-align: left;
+
+	font-size: 24;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* Paragraph text will grey */
+.paragraphText {
+
+	text-align: left;
+
+	vertical-align: text-center;
+
+	line-height: 2;
+
+	font-size: 16;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* The header section will be located at the top of the webstie, and will contain the logo and search bar */
+.header {
+
+	background-color: white;
+
+	height: 70px;
+
+}
+
+/* This is a class for the website's logos */
+.logo {
+
+	width: 60px;
+
+	height: 60px;
+
+	padding: 5px;
+
+}
+
+/* This is the class for the website's search bar */
+.searchBar {
+
+	float: right;
+
+	margin-top: 20;
+
+	height: 30;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* This is the class of the search bar's entry button */
+.entryButton {
+
+	float: right;
+
+	margin-top: 20;
+
+	margin-right: 20;
+
+	height: 30;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* This section will store the SDG 9 webpage title */
+.sdg9Title {
+
+	background-color: tomato;
+
+	padding-top: 50;
+
+	padding-bottom: 80;
+
+	line-height: 0.25;
+
+}
+
+/* This section will store the SDG 11 webpage title */
+.sdg11Title {
+
+	background-color: orange;
+
+	padding-top: 50;
+
+	padding-bottom: 80;
+
+	line-height: 0.25;
+
+}
+
+/* This section will store the SDGs 9 and 11 comparison webpage title */
+.comparisonTitle {
+
+	background-color: khaki;
+
+	padding-top: 50;
+
+	padding-bottom: 80;
+
+	line-height: 0.25;
+
+}
+
+/* This section will store the further reading webpage title */
+.furtherReadingTitle {
+
+	background-color: cornflowerblue;
+
+	padding-top: 50;
+
+	padding-bottom: 80;
+
+	line-height: 0.25;
+
+}
+
+/* This section will store the take action webpage title */
+.takeActionTitle {
+
+	background-color: yellowgreen;
+
+	padding-top: 50;
+
+	padding-bottom: 80;
+
+	line-height: 0.25;
+
+}
+
+/* A section for navigation bars */
+.navigationBarSection {
+
+	background-color: dimgrey;
+
+}
+
+/* A list class for the navigation bar */
+ul.navigationBar {
+
+  	list-style-type: none;
+
+  	margin: 0;
+
+	padding: 0;
+
+	height: 70px;
+
+	overflow: hidden;
+
+	position: sticky;
+
+}
+
+/* A class for the navigation items */
+.navigationBar a {
+
+	display: block;
+
+	float: left;
+
+	width: 175px;
+
+	height: 70px;
+
+	text-align: center;
+
+  	text-decoration: none;
+
+  	color: black;
+
+  	font-size: 20;
+
+	font-weight: 0;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* This is the status of a navigation item being hovered over */
+.navigationBar a:hover {
+
+	background-color: lightgrey !important;
+
+	color: dimgrey;
+
+	transition: 1s;
+
+}
+
+/* This is a class for the secondary navigation bar buttons */
+.navigationBar button {
+
+	all: unset; /* Removes the button style from the secondary navigation bar */
+
+	display: block;
+
+	float: left;
+
+	width: 175px;
+
+	height: 70px;
+
+	text-align: center;
+
+  	text-decoration: none;
+
+  	color: black;
+
+  	font-size: 20;
+
+	font-weight: 0;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* This is a navigation button status when being hovered over */
+.navigationBar button:hover {
+
+	background-color: lightgrey !important;
+
+	color: dimgrey;
+
+	transition: 1s;
+
+}
+
+/* This is the class for the key information section of the wepage, it has an image as its background */
+.keyInformation {
+
+	display: flex; /* The key information section is a Flexbox in order to center its items */
+  
+  	justify-content: center;
+  
+  	align-items: center;
+
+	height: 380px;
+
+	padding-top: 10;
+
+	padding-bottom: 10;
+
+	background-attachment: fixed; 
+
+	background-position: center;
+
+	background-size: cover;
+
+	background-repeat: no-repeat;
+
+}
+
+/* This is a class for the body of the program */
+.body {
+
+	background-color: #f0f2f1;
+
+}
+
+/* This is a table class used for the main content of the program, including information, charts, media, and more */
+table.information {
+
+	table-layout: fixed;
+
+	border-spacing: 0;
+
+	margin: 0;
+
+	padding: 0;
+
+	overflow: hidden;
+
+}
+
+/* This is the class for rows of the body of the website */
+.information tr {
+
+	width: 100%;
+
+	height: 25%;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+/* This is the class for items of the main body of the website */
+.information td {
+
+	width: 50%;
+
+	height: 100%;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+/* This is the class for images in the information section */
+.image {	
+
+	all: unset;
+
+	font-size: 14;
+
+	font-family: "Trebuchet MS";
+
+	width: 100%;
+
+	height: 300px;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+/* This flexbox is used to center the information in the footer */
+.footer {
+
+	display: flex;
+
+	height: 70px;
+
+	justify-content: center;
+
+	align-items: center;
+
+}
+
+/* This is the class of the footer's flexbox item */
+.footer > div {
+
+	color: grey;
+
+	font-size: 14;
+
+	font-family: "Trebuchet MS";
+
+}
+
+/* This is the class of the arrow button used to swtich between images on the SDG 11 webpage slideshow */
+.arrowButton {
+
+	padding: 10px;
+
+	float: right;
+
+	margin-top: 130px;
+
+	background-color: black;
+	
+	color: white;
+
+	opacity: 0.3;
+
+}
+
+/* This is what happens to the arrow button when it's hovered over */
+.arrowButton:hover {
+
+	opacity: 1;
+
+	transition: 1s;
+
+}
+
+/* This is the class for the quiz on the further reading webpage */
+.quiz {
+
+	display: flex;
+
+	justify-content: center;
+
+	background-color: #f0f2f1;
+	
+	height: 300px;
+
+}			
+
+
+
+

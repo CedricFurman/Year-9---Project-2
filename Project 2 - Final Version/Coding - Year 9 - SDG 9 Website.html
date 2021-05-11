@@ -1,0 +1,316 @@
+
+<!-- February - April, 2021 -->
+<!-- Cedric Furman -->
+<!-- This is my website for project 2, whose aim is to explain and compare United Nations Sustainable Developement Goals (SDG) 9 and 11 -->
+<!-- The website has 5 different pages: Page 1 - SDG 9, page 2 - SDG 11, page 3 - comparing both SDGs, page 4 - further reading, and page 5 - how to take action -->
+<!-- This file contains the SDG 11 webpage -->
+
+
+
+<!DOCTYPE hmtl>
+
+<html> 
+
+<head> <!-- Start of the head section ----------------------------------------------------->
+
+	<title> Sustainable Development Goal 9 </title>
+
+	<!-- -------------------------->
+
+	<link rel = "icon" href = "SDGLogo.png"> <!-- Gives the page's google tab a favicon (a tab icon) -->
+
+	<!-- -------------------------->
+
+	<!-- Cascading Style Sheets (CSS) definitions -->
+
+	<link rel= "stylesheet" href= "Coding - Year 9 - SDGs 9 and 11 Website - External Style Sheet.css"> <!-- An external style sheet is accesed to keep files shorter -->
+
+	<!-- -------------------------->
+
+	<!-- Javascript definitions -->
+
+	<script src= "Coding - Year 9 - SDGs 9 and 11 Website - External Javascript File.js"> </script> <!-- The website also uses an external script file -->
+
+	<!-- -------------------------->
+
+	<!-- Chart.js -->
+
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script> <!-- The SDG 9 webpage contains a graph that uses Chart.js -->
+
+</head> <!-- End of the head Section ----------------------------------------------------->
+
+<body style = "background-color: white; margin: 0; padding: 0;"> <!-- Start of the body Section ----------------------------------------------------->
+
+	<div></div> <!-- -------------------------->
+
+	<section class = "header">
+
+		<img onclick = "home();" src = "SDGLogo.png" class = "logo">
+
+		<button id = "entryButton" onclick = "search();" type = "button" class = "entryButton"> Enter </button> <!-- This is the search bar entry button -->
+
+		<input id = "entryBox" type = "text" class = "searchBar" placeholder = "Search..."> <!-- This is the website's search bar -->
+
+	</section> 
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the site's primary navigation bar -->
+
+		<ul class = "navigationBar">
+
+			<li> <a style = "background-color: lightgreen;" href = "Coding - Year 9 - SDG 9 Website.html"> <br> SDG 9 </a> </li>
+
+			<li> <a href = "Coding - Year 9 - SDG 11 Website.html"> <br> SDG 11 </a> </li> 
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Comparison Website.html"> <br> Comparison </a> </li>
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Further Reading Website.html"> <br> Further Reading </a> </li>
+
+			<li> <a style = "float: right;" href = "Coding - Year 9 - SDGs 9 and 11 Take Action Website.html"> <br> Take Action </a> </li>
+
+		</ul>
+
+	</section>
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "sdg9Title"> <!-- This is the website's title -->
+
+		<h3 class = "subtitleText"> United Nations </h1>
+
+		<h1 class = "titleText"> Sustainable Developement Goal 9 </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "keyInformation" style = "background-image: url('WuppertalTrain.jpg');"> <!-- This is the key information section of the webapge, it's meant to gain the attention of the user and provide a summary -->
+
+		<h3 class = "sectionTitleText" style = "color: white; font-weight: bold;"> Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the secondary navigation bar, it's used for switching between different topics on the webpage -->
+
+		<ul class = "navigationBar">
+
+			<button id = "theProblem" onclick = "displayTheProblem(); displaySubpage();" style = "margin-left: 460; background-color: lightgreen;"> The Problem </button> 
+
+			<button id = "solutions" onclick = "displaySolutions(); displaySubpage();"> Solutions </button> 
+
+			<button id = "examples" onclick = "displayExamples(); displaySubpage();"> Examples </button> 
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+ 
+	<section class = "body"> <!-- This is the main body of the webpage that will contain most of its information -->
+
+		<!-- This is the table for the problem subpage -->
+		<table id = "theProblemTable" class = "information"> <!-- Each row of the body contains text accompanied by media or an interactive feature, as in my design from B ii. The rows are each seperate lists, and the sides of media and information alternate each row -->
+
+			<tr>
+  
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The global population has recently surpassed 7 and a half billion. Infrastructure is the key to providing the world acess to the ressources it needs; it provides sustainable economic growth, improves supply chains, provides services, and improves quality of life. Despite the necessity of infrastructure, it's still largely unsafe, not environmental, or even unavilable across the globe. </td>
+
+				<td> <img src = "TorontoTraffic.jpg" alt = "Traffic in Toronto" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <canvas id = "infrastructureSpendingChart" class = "image"> </canvas> </td> <!-- A graph of infrastructure spending is displayed using Chart.js, data source: https://www.weforum.org/agenda/2019/04/infrastructure-gap-heres-how-to-solve-it/ -->
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> A large contributer to lacking infrastructure is disproportionate funding. Countries and municipalities often underfund infrastructure, or there is a lack of private investment, this leads to large abscences of infrastructure and the problems that come with it. Among the world's largest infrastructure spenders, many have funding gaps measuring in percents of their GDPs (figure on the left). </td>
+
+			</tr>
+
+			<tr> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Already existing infrastructure has its own issues, it can be underperforming, and hazardous. As settlements expand, goverments build infrastructure to support them, but often neglected is aging infrastructure. Older infrastructure often has a lower capacity and is overused, it's also likely less efficient, but frequently aging infrastructure is only refurbished to meet requirements. Obsolete infrastructure also has the potential to be unsafe and cease working </td> <!-- https://www.renewcanada.net/feature/addressing-the-challenges-of-aging-infrastructure/ -->
+
+				<td> <img src = "TTCCongestion.jpg" alt = "Traffic on the TTC" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "ElectricityAcess.jpg" alt = "Electricity acess across the globe" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Worse than the issue of aging infrastructure, is abscent infrastructre. Common in developing nations, forms of infrastructure are not present, leading to sizeable economic, social, or health issues. For instance, least developed countries only have an average internet acess of 19% and often don't have any electricity (see the figure on the left). </td>
+
+			</tr>
+
+		</table>
+
+		<!-- This is the table for the solutions subpage -->
+		<table id = "solutionsTable" class = "information" style = "display: none;"> 
+
+			<tr>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> A solution to global issues of infrastructure is to reach the targets of sustainable development goal (SDG) 9. SDG 9 (under target 9.1) aims to "Develop quality, reliable, sustainable and resilient infrastructure", to "support economic development and human well-being". Investment in sustainable infrastructure helps ensure its acess and its continual reliability for long periods of time. </td> <!-- https://sdgs.un.org/goals/goal9 -->
+
+				<td> <iframe class = "image" controls src="https://www.youtube.com/embed/m15HiFEI7Ps"> </iframe> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "TypesOfInfrastructure.jpg" alt = "A figure explaining the different types of infrastructure" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Being a large field, infrastructure may be significantly subdivided. Some of the larger catergories are energy, water, waste, transportation, healthcare, and education. Each help extensively in improving the conditions of settlements where they are situated, solving the problems outlined previously. </td>
+
+			</tr>
+
+			<tr> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Governments can help support safe and resilient infrastructure. Increasing funding for the production of infrastructure can lead to more prevelant and higher quality infrastructure. To fully eliminate safety and reliability concerns of infrastructure, governments can introduce design standards that favour resiliance. </td> <!-- https://medium.com/safer-and-stronger-cities-strategies-for-advocatin/promote-safe-and-resilient-infrastructure-9eaf9d0f5c95 -->
+
+				<td> <img src = "HighwayInterchange.jpg" alt = "A large highway interchange in Chongqing, China" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "OffshoreWindTurbines.jpg" alt = "Offshore wind turbines in Lake Ontario" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Sustainable infrastructure may be developed to mitigate the negative environmental implications that infrastructure often has. Older infrastructure has often been designed with less durable practices in mind, but to ensure resiliance, governments may promote and finance sustainable infrastructure like public transit and wind power. </td> <!-- https://www.nortonrosefulbright.com/en-ca/knowledge/publications/0c89c7b4/sustainable-infrastructure-a-path-for-the-future -->
+
+			</tr>
+
+		</table>
+
+		<!-- This is the table for the examples subpage -->
+		<table id = "examplesTable" class = "information" style = "display: none;"> 
+
+			<tr>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The Grand Renaissance Dam, Ethiopia, will be located on the Blue Nile River, and the will be the Africa's largest hydroelectric power plant. The dam has an expected annual production of over 6 gigawatt-hours (GWh) and is a great sustainable energy infrastructure project, although the dam does possess some controversy over its impacts on Nile River irrigation </td> <!-- https://www.water-technology.net/projects/grand-ethiopian-renaissance-dam-africa/ -->
+
+				<td> <img src = "GrandRenaissanceDam.jpg" alt = "Grand Renaissance Dam, Ethiopia" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "BhadlaSolarPark.jpg" alt = "Bhadla solar park, India" class = "image"> </td> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Bhadla Solar Park spans across the Northern Indian state of Rajasthan, as of 2020, it's the world's largest solar park, with a energy production of 2,245 Megawatts (MW). The park covers over 14,000 acres of desert for efficient energy production; the average temperature is close to 48 degrees Celcius. The park is an incredible example of resiliant energy infrastructure. </td> <!-- https://en.wikipedia.org/wiki/Bhadla_Solar_Park -->
+
+			</tr>
+
+			<tr> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The Tokyo subway was built at a rapid rate in the late 20th century, it consists of 286 stations and 13 lines covering the Greater Tokyo area. The Tokyo subway's vast proportions help it boast 8.7 million daily passengers, making it an exceptional transportation infrastructure network. </td> <!-- https://en.wikipedia.org/wiki/Tokyo_subway -->
+
+				<td> <img src = "TokyoSubway.png" alt = "A map of the Tokyo train system" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "ChannelTunnel.jpg" alt = "The Channel Tunnel, English Channel" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The Channel Tunnel, or Eurotunnel, is an underwater tunnel that connects the railroads of the United Kingdom to mainland Europe. The 50km tunnel passes through the Strait of Dover in the English Channel and took from 1988 until 1994 to construct. The Channel Tunnel is an excellent example of transportation infrastructure. </td> <!-- https://www.britannica.com/topic/Channel-Tunnel -->
+
+			</tr>
+
+		</table>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "header"> <!-- This is the website's footer. The header class is used because it has the same properties as the footer -->
+
+		<div class = "footer"> <!-- A flexbox is used to keep its contents centered -->
+
+			<div> Cedric Furman, 2021 </div> <!-- Some brief information on the programmer -->
+
+		</div>
+
+	</section>
+
+	<!-- -------------------------->
+
+	<script> // The Javscript code that displays the infrastructure spending chart from the SDG 9 webpage, source: https://www.stanleyulili.com/javascript/beginner-guide-to-chartjs/
+
+	Chart.defaults.global.legend.display = false; // Removes data set label display
+
+	var countries = ["Mexico", "Indonesia", "Brazil", "India", "South Africa", "United Kingdom"]; // Stores the x-axis values–countries 
+
+	var infrstructureFundingGaps = [1.3, 1.2, 1.1, 0.7, 0.6, 0.5]; // Stores the y-axis values–infrastructure funding gaps of each contry (as a percentage of GDP)
+
+	var barColours = ["red", "yellow", "green", "blue", "purple", "brown"];
+
+	var ctx = document.getElementById("infrastructureSpendingChart");
+	
+	var myChart = new Chart(ctx, {  // The chart is stored as a variable
+  
+ 		type: "bar",
+
+ 			data: {
+
+			labels: countries,
+
+   			datasets: [{
+
+    			backgroundColor: barColours,
+
+      			data: infrstructureFundingGaps
+
+    		}]
+
+ 		},
+   
+ 		options: {
+
+ 			title: { // Title of the bar graph
+
+ 				display: true,
+
+   		 	  	text: "Projected Infrastructure Spending Gaps (% of GDP) Among Highest Expenditure Countries"
+
+    		},
+
+    		scales: {
+
+        		yAxes: [{
+
+            		ticks: { // Displays all the bars in the figure
+
+                		suggestedMin: 0 
+
+            		}
+
+        		}]
+
+    		}
+
+    	}
+
+	});
+
+	</script>
+
+</body>
+
+</html>
+

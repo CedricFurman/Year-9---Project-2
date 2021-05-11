@@ -1,0 +1,150 @@
+
+<!-- February - April, 2021 -->
+<!-- Cedric Furman -->
+<!-- This is my website for project 2, whose aim is to explain and compare United Nations Sustainable Developement Goals (SDG) 9 and 11 -->
+<!-- The website has 5 different pages: Page 1 - SDG 9, page 2 - SDG 11, page 3 - comparing both SDGs, page 4 - further reading, and page 5 - how to take action -->
+<!-- This file contains the take action webpage -->
+
+
+
+<!DOCTYPE hmtl>
+
+<html> 
+
+<head> <!-- Start of the head section ----------------------------------------------------->
+
+	<title> Sustainable Development Goals 9 and 11 Take Action </title>
+
+	<!-- -------------------------->
+
+	<link rel = "icon" href = "SDGLogo.png"> <!-- Gives the page's google tab a favicon (a tab icon) -->
+
+	<!-- -------------------------->
+
+	<!-- Cascading Style Sheets (CSS) definitions -->
+
+	<link rel= "stylesheet" href= "Coding - Year 9 - SDGs 9 and 11 Website - External Style Sheet.css"> <!-- An external style sheet is accesed to keep files shorter -->
+
+	<!-- -------------------------->
+
+	<!-- Javascript definitions -->
+
+	<script src= "Coding - Year 9 - SDGs 9 and 11 Website - External Javascript File.js"> </script> <!-- The website also uses an external script file -->
+
+</head> <!-- End of the head Section ----------------------------------------------------->
+
+<body style = "background-color: white; margin: 0; padding: 0;"> <!-- Start of the body Section ----------------------------------------------------->
+
+	<div></div> <!-- -------------------------->
+
+	<section class = "header">
+
+		<img onclick = "home();" src = "SDGLogo.png" class = "logo">
+
+		<button id = "entryButton" onclick = "search();" type = "button" class = "entryButton"> Enter </button> <!-- This is the search bar entry button -->
+
+		<input id = "entryBox" type = "text" class = "searchBar" placeholder = "Search..."> <!-- This is the website's search bar -->
+
+	</section> 
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the site's primary navigation bar -->
+
+		<ul class = "navigationBar">
+
+			<li> <a href = "Coding - Year 9 - SDG 9 Website.html"> <br> SDG 9 </a> </li>
+
+			<li> <a href = "Coding - Year 9 - SDG 11 Website.html"> <br> SDG 11 </a> </li> 
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Comparison Website.html"> <br> Comparison </a> </li>
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Further Reading Website.html"> <br> Further Reading </a> </li>
+
+			<li> <a style = "float: right; background-color: lightgreen;" href = "Coding - Year 9 - SDGs 9 and 11 Take Action Website.html"> <br> Take Action </a> </li>
+
+		</ul>
+
+	</section>
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "takeActionTitle"> <!-- This is the website's title -->
+
+		<h3 class = "subtitleText"> Sustainable Development Goals 9 and 11 </h1>
+
+		<h1 class = "titleText"> Involvement </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "keyInformation" style = "background-image: url('Barcelona.jpg');"> <!-- This is the key information section of the webapge, it's meant to gain the attention of the user and provide a summary -->
+
+		<h3 class = "sectionTitleText" style = "color: white; font-weight: bold;"> There are great ways to get involved in SDGs 9 and 11 </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the secondary navigation bar for SDGs 9 and 11 webpages, but on the comparison webapge where everything fits on one page, it's used as a divider -->
+
+		<ul class = "navigationBar">
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+ 
+	<section class = "body"> <!-- This is the main body of the webpage that will contain most of its information -->
+
+		<table id = "theProblemTable" class = "information"> <!-- Each row of the body contains text accompanied by media or an interactive feature, as in my design from B ii. The rows are each seperate lists, and the sides of media and information alternate each row -->
+
+			<tr>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> A great way to get involved in SDGs 9 and 11 is to learn about them. Using the sources in the further reading page of this website are great tools to obtain an understanding and follow the news of the SDGs; knowing more about the strategies and progresses of goals 9 and 11 will help in keeping up with them and their implimentation. </td>
+
+				<td> <img src = "CuritibaBrazil.jpg" alt = "A large urban park in Curitiba, Brazil" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "QuaiBranlyMuseumParis.jpg" alt = "Quai Branly Museum Paris, France" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> A good way to take action for goals 9 and 11 is to share them. Propagating the targets of the two SDGs, through explaining them or giving others resources like this website, helps in their consideration and promotes their sustainable practices. </td>
+
+			</tr>
+
+		</table>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "header"> <!-- This is the website's footer. The header class is used because it has the same properties as the footer -->
+
+		<div class = "footer"> <!-- A flexbox is used to keep its contents centered -->
+
+			<div> Cedric Furman, 2021 </div> <!-- Some brief information on the programmer -->
+
+		</div>
+
+	</section>
+
+</body>
+
+</html>

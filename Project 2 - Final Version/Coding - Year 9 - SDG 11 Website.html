@@ -1,0 +1,247 @@
+
+<!-- February - April, 2021 -->
+<!-- Cedric Furman -->
+<!-- This is my website for project 2, whose aim is to explain and compare United Nations Sustainable Developement Goals (SDG) 9 and 11 -->
+<!-- The website has 5 different pages: Page 1 - SDG 9, page 2 - SDG 11, page 3 - comparing both SDGs, page 4 - further reading, and page 5 - how to take action -->
+<!-- This file contains the SDG 9 webpage -->
+
+
+
+<!DOCTYPE hmtl>
+
+<html> 
+
+<head> <!-- Start of the head section ----------------------------------------------------->
+
+	<title> Sustainable Development Goal 11 </title>
+
+	<!-- -------------------------->
+
+	<link rel = "icon" href = "SDGLogo.png"> <!-- Gives the page's google tab a favicon (a tab icon) -->
+
+	<!-- -------------------------->
+
+	<!-- Cascading Style Sheets (CSS) definitions -->
+
+	<link rel= "stylesheet" href= "Coding - Year 9 - SDGs 9 and 11 Website - External Style Sheet.css"> <!-- An external style sheet is accesed to keep files shorter -->
+
+	<!-- -------------------------->
+
+	<!-- Javascript definitions -->
+
+	<script src= "Coding - Year 9 - SDGs 9 and 11 Website - External Javascript File.js"> </script> <!-- The website also uses an external script file -->
+
+</head> <!-- End of the head Section ----------------------------------------------------->
+
+<body style = "background-color: white; margin: 0; padding: 0;"> <!-- Start of the body Section ----------------------------------------------------->
+
+	<div></div> <!-- -------------------------->
+
+	<section class = "header">
+
+		<img onclick = "home();" src = "SDGLogo.png" class = "logo">
+
+		<button id = "entryButton" onclick = "search();" type = "button" class = "entryButton"> Enter </button> <!-- This is the search bar entry button -->
+
+		<input id = "entryBox" type = "text" class = "searchBar" placeholder = "Search..."> <!-- This is the website's search bar -->
+
+	</section> 
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the site's primary navigation bar -->
+
+		<ul class = "navigationBar">
+
+			<li> <a href = "Coding - Year 9 - SDG 9 Website.html"> <br> SDG 9 </a> </li>
+
+			<li> <a style = "background-color: lightgreen;" href = "Coding - Year 9 - SDG 11 Website.html"> <br> SDG 11 </a> </li> 
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Comparison Website.html"> <br> Comparison </a> </li>
+
+			<li> <a href = "Coding - Year 9 - SDGs 9 and 11 Further Reading Website.html"> <br> Further Reading </a> </li>
+
+			<li> <a style = "float: right;" href = "Coding - Year 9 - SDGs 9 and 11 Take Action Website.html"> <br> Take Action </a> </li>
+
+		</ul>
+
+	</section>
+
+
+	<div></div> <!-- -------------------------->
+
+
+	<section class = "sdg11Title"> <!-- This is the website's title -->
+
+		<h3 class = "subtitleText"> United Nations </h1>
+
+		<h1 class = "titleText"> Sustainable Developement Goal 11 </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "keyInformation" style = "background-image: url('SustainableTower.jpg');"> <!-- This is the key information section of the webapge, it's meant to gain the attention of the user and provide a summary -->
+
+		<h3 class = "sectionTitleText" style = "color: white; font-weight: bold;"> Make cities and human settlements inclusive, safe, resilient and sustainable </h3>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "navigationBarSection"> <!-- This is the secondary navigation bar, it's used for switching between different topics on the webpage -->
+
+		<ul class = "navigationBar">
+
+			<button id = "theProblem" onclick = "displayTheProblem(); displaySubpage();" style = "margin-left: 460; background-color: lightgreen;"> The Problem </button> 
+
+			<button id = "solutions" onclick = "displaySolutions(); displaySubpage();"> Solutions </button> 
+
+			<button id = "examples" onclick = "displayExamples(); displaySubpage();"> Examples </button> 
+
+		</ul>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+ 
+	<section class = "body"> <!-- This is the main body of the webpage that will contain most of its information -->
+
+		<!-- This is the table for the problem subpage -->
+		<table id = "theProblemTable" class = "information"> <!-- Each row of the body contains text accompanied by media or an interactive feature, as in my design from B ii. The rows are each seperate lists, and the sides of media and information alternate each row -->
+
+			<tr>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> It's projected that over two thirds of the world will live in cities by 2050. Although urbanization is currently a global phenomenon, it's only a new practice in history that hasn't yet been perfected and comes with its challenges. Cities are the future of settlements, and therefore should be built resilient, instead, they are frequently unsustainable, noninclusive, and not durable. </td> <!-- https://ourworldindata.org/urbanization and https://sdgs.un.org/goals/goal11 -->
+
+				<td> <img src = "FarmsAndTowersInHefei.jpg" alt = "Farms adjacent to towers in Hefei, China" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "PublicTransportationSpending.jpg" alt = "A chart depicting dwindling public transit and water spending in the United States" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Cities require an array of services to function and sustain a high quality of life for their residents. Often times, cities don't have adequate resources in their budgets to sustain or build required services, causing complications in availability of transportation, parks, energy, water, waste, healthcare, and education. Declining spending, a factor in inavailability of city services is commonly increasing (see chart). </td> <!-- http://www3.weforum.org/docs/WEF_Urban-Services.pdf -->
+
+			</tr>
+
+			<tr> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> There are often inclusivity problems in city planning. Aside from funding the services of a city, governments also have to layout and design urban areas, which is often ignored and leads to worsened inclusivity of services. Nearly a quarter of the world's urban population lives in slums with little to no acess to services, and only half of city residents have easy acess to public transit and parks; a lack of attention to urban planning leads to noninclusive cities. </td> <!-- https://sdgs.un.org/goals/goal11 and https://wcr.unhabitat.org/wp-content/uploads/2017/03/Chapter4-WCR-2016.pdf -->
+
+				<td> <img src = "WealthInequalityInMumbai.jpg" alt = "Wealth inequality in Mumbai, India" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "LosAngelesAirPollution.jpg" alt = "Air pollution in Los Angeles, United States" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Cities are commonly environmentally unsustainable. Housing half the global population and having a high rate of consuption, cities leave larger environmental impacts on the planet and their residents. The high concentration of carbon emissions in urban areas is harmful to health, and contributes to the millions of yearly premature deaths due to air pollution. </td>
+
+			</tr>
+
+		</table>
+
+		<!-- This is the table for the solutions subpage -->
+		<table id = "solutionsTable" class = "information" style = "display: none;"> 
+
+			<tr>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> A solution to the countless issues that face modern cities is implementing the goals of SDG 11. SDG 11 aspires for "inclusive, safe, resilient and sustainable" cities; urban areas should have needed services to remove noninclusivity, less pollution to end health risks of unenvironmental cities, as well as resiliance and sustainability to promote long-lasting development. </td> <!-- https://sdgs.un.org/goals/goal11 -->
+
+				<td> <img src = "SeoulDowntownGreenery.jpg" alt = "Green areas in downtown Seoul, South Korea" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "TTCStreetcar.jpg" alt = "A streetcar in downtown Toronto" class = "image"> </td> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Greater service acess can be acocomplished by governments through encouraging investment and increasing funding. By encouraging and working with the private sector or increasing funding, while planning correctly, cities can be built up and more services can be made available for greater inclusivity. </td> <!-- https://www.worldbank.org/en/topic/inclusive-cities -->
+
+			</tr>
+
+			<tr> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Cities can go about achieving a lower "per capita environmental impact" (SDG 11, target 11) through multiple methods. Cities can invest in better public transport to lower their environmental impact, public transport is much more efficient than driving for carbon emissions, since more people can use the same vehicle. Cities may also lower their environmental impact through policies and green spaces, green spaces barely limit carbon emissions, but are good for improving air quality and health. </td> <!-- https://sdgs.un.org/goals/goal11 and https://www.conserve-energy-future.com/benefits_of_public_transportation.php -->
+
+				<td> <img src = "CentralPark.jpg" alt = "Central Park, New York, United States" class = "image"> </td>
+
+			</tr>
+
+			<tr> 
+
+				<td> <img src = "Vancouver.jpg" alt = "The downtown Vancouver skyline" class = "image"> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> By changing their patterns, cities can become sustainable and resiliant, making them sucessful for the present and future. Urban areas with less consuption of fossil fuels are environmentally sustainable, the same strategies mentioned in making safer cities could be used. Greater amounts of services in cities can help create more economic sustainability, they create greater financial growth and improve quality of life and inclusivity. Parks, museums, and other public places can help create social sustianability through providing better urban conditions. </td> <!-- https://www.weforum.org/agenda/2020/09/cities-sustainability-innovation-global-goals/ -->
+
+			</tr>
+
+		</table>
+
+		<!-- This is the table for the examples subpage -->
+		<table id = "examplesTable" class = "information" style = "display: none;"> 
+
+			<tr>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> An increasing car scene and the accidents it caused led Copenhagen, Denmark, to promote biking instead of driving. The city improved cycling infrastructure throughout its entire area to make biking a viable commuting option, the implimentation of bike lanes and areas inacessable by cars increased bike ridership to the point where it became the most popular method of commuting. Biking in Copenhagen is incredibly sustainable as it greatly decreased city's environmental impact. </td> <!-- https://use.metropolis.org/case-studies/cycling-in-copenhagen -->
+
+				<td> <img src = "CopenhagenBikers.jpg" alt = "This is a caption describing the image" class = "image"> </td> 
+
+			</tr>
+
+			<tr> 
+
+				<td> <iframe class = "image" controls src="https://www.youtube.com/embed/2tU4vTcxKZs"> </iframe> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The Beijing Subway opened in 1971 and expanded rapidly in the 2000s, becoming the world's most rode subway system. The suway has 24 lines and covers over 727km, in 2019 the subway reached over 13.7 million daily passengers; the decrease in fossil-fuel reliant methods of transportation caused by the subway has made it a truly excellent example of an environmentally sustainable project. </td> <!-- https://en.wikipedia.org/wiki/Beijing_Subway -->
+
+			</tr>
+
+			<tr> 
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> Boston made its downtown more sustainable through the "Big Dig". The Central Artery road passed right through Boston's center, causing traffic, noise and air pollution, the city decided to reroute the highway underground and replace it with urban green space. The project created a more environmentally and socially sustainable city center by decreasing pollution and imrpoving quality of life. </td> <!-- https://www.roadtraffic-technology.com/projects/big_dig/ -->
+
+				<td> <a onclick = "displayPreviousImage();" class = "arrowButton" style = "float: left;"> &#8249; </a> <img id = "slideshow" src = "BigDigBefore.jpg" class = "image" style = "width: 92.95%;"> <a onclick = "displayNextImage();" class = "arrowButton"> &#8250; </a> </td> <!-- An image slideshow is displayed with help from the script tag, it involves an image frame and an arrow button to switch between images, source: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+			</tr>
+
+			<tr> 
+
+				<td> <iframe class = "image" controls src="https://www.youtube.com/embed/_W2Yq1zzxAc"> </iframe> </td>
+
+				<td class = "paragraphText" style = "padding-left: 10; padding-top: 10;"> The Highline is built on former tracks of the New York Central Railroad in West Manhattan. Since the tracks had no use, they were decided to be used as an urban park for greater social (improved quality of life) and environmental (lessened impacts of air pollution) sustainability. The Highline proved to be very sucessful, reaching over 8 million visitors in 2019, it's a great example of a sustainable cities initiative. </td> <!-- https://en.wikipedia.org/wiki/High_Line -->
+
+			</tr>
+
+		</table>
+
+	</section>
+
+
+	<div> </div> <!-- -------------------------->
+
+
+	<section class = "header"> <!-- This is the website's footer. The header class is used because it has the same properties as the footer -->
+
+		<div class = "footer"> <!-- A flexbox is used to keep its contents centered -->
+
+			<div> Cedric Furman, 2021 </div> <!-- Some brief information on the programmer -->
+
+		</div>
+
+	</section>
+
+</body>
+
+</html>
+
